@@ -1,13 +1,104 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #EEF5DB;
+    overflow: hidden;
+}
+
+.todo-list{
+    position: relative;
+    top: 30vh;
+    left: 30vw;
+    overflow: hidden;
+}
+
+.todo-search{
+    padding: 10px 0 10px 30px;
+    margin: 10px;
+    width: 500px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    background-color: #C4C8BC;
+    opacity: 0.7;
+    color: #1D5D36;
+    font-size: 1.3rem;
+}
+
+.todo-search:focus{
+    outline: #4A4F40;
+}
+
+.btn{
+    height: 50px;
+    width: 150px;
+    margin-left: 10px;
+    padding: 10px;
+    color: #1D5D36;
+    border-radius: 15px;
+    border: none;
+    background-color:#C4C8BC;
+}
+
+.btn:hover{ 
+    background-color: #7E876E;
+    cursor: pointer;
+}
+
+.task-statement{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    width: 600px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #C4C8BC;
+    opacity: 0.7;
+    
+}
+
+.list-value{
+    padding: 15px 0 0 30px;
+    color: #1D5D36;
+    font-size: 1.3em;
+}
+
+.icons{
+    padding: 5px 10px;
+}
+
+.done-icon{
+    color: #1D5D36;
+    margin-right: 10px;
+    font-size: 1.3em;
+}
+
+.edit-icon{
+    color: #2A3CDF;
+    margin-right: 10px;
+    font-size: 1.3em;
+}
+.close-icon{
+    color: #CC0000;
+    margin-right: 10px;
+    font-size: 1.3em;
+}
+
+.icon:hover{
+    cursor: pointer;
 }
